@@ -23,6 +23,7 @@ SECRET_KEY = 'django-insecure-j%j!*+0!4i=#iu_6g!@^$47^i7*z$+5#p5&dtq&f8#m_$uwf-(
 
 # SECURITY WARNING: don't run with debug turned on in production!
 import os
+
 DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = []
@@ -60,7 +61,10 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:4200',
     'https://moodle32515.web.app/'
 ]
-
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:4200',
+    'https://moodle32515.web.app/'
+]
 ROOT_URLCONF = 'backend.urls'
 
 TEMPLATES = [
@@ -129,4 +133,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
