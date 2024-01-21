@@ -63,7 +63,7 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:4200',
-    'https://moodle32515.web.app/'
+    'https://moodle32515.web.app'
 ]
 ROOT_URLCONF = 'backend.urls'
 
